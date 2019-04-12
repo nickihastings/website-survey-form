@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Website Survey Form</title>
+        <meta name="description" content="Responsive Survey Form project from freeCodeCamp">
+        <link href='https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700' rel='stylesheet'>
+        <link rel="stylesheet" media="screen" href="styles.css" />
+    
+    </head>
+    
+    <body>
+        <main>
+  <header><h1 id="title">Survey Form</h1></header>
+  
+  <section>
+    <h2>What do you want from your business website?</h2>
+    <p id="description">If you want a website for your business, what are the features that are important to you?</p>
+    <form id="survey-form">
+      <div class="columns">
+        <div class="form-group column">
+          <label for="name" id="name-label">Name: <span class="required">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+            
+        <div class="form-group column">
+          <label for="email" id="email-label">Email: <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+        </div>
+      </div>
+      
+      <div class="form-group single-row">
+        <label for="number" id="number-label">What would you expect to pay for a business website? <span class="required">*</span></label>
+        <span class="price">£ <input type="number" name="price" id="number" placeholder="Enter a price, numbers only" min="100" max="999999" required></span>
+      </div>
+    
+    <div class="form-group">
+      <fieldset class="radios">
+        <legend>What is your level of expertise at using a computer and editing a website?</legend>
+      <label for="beginner"><input id="beginner" type="radio" name="knowledge" value="beginner">Beginner - I can use a computer, access facebook and upload images, send email, I have never used my own website.</label>
+      <label for="intermediate"><input id="intermediate" type="radio" name="knowledge" value="intermediate">Intermediate - I have worked on a computer, can use Word and/or have had my own website or blog.</label>
+      <label for="advanced"><input id="advanced" type="radio" name="knowledge" value="advanced">Advanced - I understand computers, use computers nearly every day and go online regularly, have my own website or blog and have updated it myself.</label>
+      </fieldset>
+    </div>
+      <div class="form-group single-row">
+        <label for="reason">Which of the following reasons do you consider to be the main reason for having a business website?</label>
+        <select id="dropdown" name="reason">
+          <option disabled value="">Choose an option</option>
+          <option value="Promote Globally">To promote my business globally</option>
+          <option value="Promote Locally">To promote my business locally</option>
+          <option value="New Clients">To bring new clients to my business</option>
+          <option value="Sell Products">To sell my products online</option>
+          <option value="Awareness">To get more awareness of my business</option>
+          <option value="Should Have One">People say I should have one</option>
+        </select>
+    </div>
+      
+      <div class="form-group ">
+        <fieldset class="checkboxes">
+          <legend>What would you like your website to do for your business? (Tick all that apply)</legend>
+          <label><input type="checkbox" name="achievements" value="Get more clients">Get more clients</label>
+          <label><input type="checkbox" name="achievements" value="Sell products online">Sell products online</label>
+          <label><input type="checkbox" name="achievements" value="Increase brand awareness">Increase brand awareness</label>
+          <label><input type="checkbox" name="achievements" value="Be No.1 on Google">Be No.1 on Google</label>
+          <label><input type="checkbox" name="achievements" value="Bring in more revenue">Bring in more revenue</label>
+        </fieldset>
+    </div>
+      <div class="form-group">
+        <fieldset class="checkboxes">
+          <legend>What features would you want your website to have? (Tick all that apply)</legend>
+          <div class="columns">
+            <div class="column">
+              <label><input type="checkbox" name="features" value="Services/Products Page">Services/Products Page</label>
+              <label><input type="checkbox" name="features" value="Portfolio of work">Portfolio of work</label>
+              <label><input type="checkbox" name="features" value="Photo Gallery">Photo Gallery</label>
+              <label><input type="checkbox" name="features" value="Online Shop">Online Shop</label>
+              <label><input type="checkbox" name="features" value="Online Payments">Online Payments</label>
+              <label><input type="checkbox" name="features" value="Contact Form">Contact Form</label>
+              <label><input type="checkbox" name="features" value="Booking Form">Booking Form</label>
+            </div>
+            <div class="column">
+              <label><input type="checkbox" name="features" value="Availability Calendar">Availability Calendar</label>
+              <label><input type="checkbox" name="features" value="Blog">Blog</label>
+              <label><input type="checkbox" name="features" value="Multilingual">Multilingual</label>
+              <label><input type="checkbox" name="features" value="Advertising Space">Advertising Space</label>
+              <label><input type="checkbox" name="features" value="Social Media Feeds">Social Media Feeds</label>
+              <label><input type="checkbox" name="features" value="Google Analytics">Google Analytics</label>
+              <label><input type="checkbox" name="features" value="CMS (Content Management System)">CMS (Content Management System)</label>
+            </div>
+          </div>
+        </fieldset>
+    </div>
+    
+    <div class="form-group">
+        <label for="comments">Any further comments?</label>
+        <textarea name="comments" id="comments" placeholder="List any extra features or needs for your website."></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button id="submit" name="submit" type="submit">Submit</button>
+    </div>
+    </form>
+  </section>
+  
+  <footer>Built by <a href="https://twitter.com/nicki_hastings" target="_blank">Nicola Hastings</a></footer>
+</main>
+    </body>
+</html>
